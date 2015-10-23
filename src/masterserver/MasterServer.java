@@ -35,7 +35,7 @@ public class MasterServer
     public static void main(String[] args)
     {
         LogWrite("Starting Krowder MasterServer...");
-        server = new Server();
+        server = new Server(163840, 20480);
         
         LogWrite("Registering packets...");
         Auth.register(server);
